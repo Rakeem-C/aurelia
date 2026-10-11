@@ -2,6 +2,8 @@
 
 A Roman single-player RTS with four ages, economy, construction, research, fog, AI combat, tactical pause, and local saves.
 
+**[Play in your browser](https://aurelia-empires.vercel.app/)** — public Unity WebGL build. Desktop mouse and keyboard recommended.
+
 ## Architecture
 
 The battlefield runs in a Unity 6.3 LTS Web player. Unity C# owns the camera, terrain meshes, fog mesh, sprite GameObjects, selection overlays, building previews, and movement interpolation. The existing deterministic JavaScript simulation remains in its browser Worker; browser HTML controls and save storage are retained. This is a Unity rendering migration, not a full C# simulation rewrite. Canvas is used to bake original art textures and draw the minimap; the main battlefield is rendered by Unity WebGL.
