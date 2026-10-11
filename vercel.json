@@ -1,0 +1,1 @@
+{"framework":null,"buildCommand":null,"outputDirectory":"Web","headers":[{"source":"/(.*)\\.wasm","headers":[{"key":"Content-Type","value":"application/wasm"}]},{"source":"/unity/Build/(.*)","headers":[{"key":"Cache-Control","value":"public,max-age=0,must-revalidate"}]}]}

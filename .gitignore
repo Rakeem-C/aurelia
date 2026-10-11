@@ -1,0 +1,10 @@
+Unity/Library/
+Unity/Temp/
+Unity/Obj/
+Unity/Logs/
+Unity/UserSettings/
+.qa/
+.vercel/
+node_modules/
+*.log
+legacy-tests/
