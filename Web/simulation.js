@@ -14,7 +14,7 @@ export class Simulation {
     this.rng=cfg.seed>>>0;this.nextId=1;this.paths=new Map();this.byId=new Map();this.grid=new Map();this.pathBudget=0;
     const width=Math.ceil(cfg.size/32),terrain=new Array(width*width).fill(0);
     this.state={version:1,tick:0,time:0,seed:cfg.seed,map:{size:cfg.size,width,height:width,cellSize:32,terrain},config:cfg,
-      players:[0,1].map(id=>({id,name:id?'The Obsidian Senate':'Aurelia',age:cfg.startingAge,resources:Object.fromEntries(RESOURCES.map(r=>[r,Math.max(0,Number(typeof cfg.startingResources==='object'?cfg.startingResources[r]:cfg.startingResources)||0)])),population:0,popCap:0,maxPop:cfg.population,techs:[],researchQueue:[],score:0,kills:0})),
+      players:[0,1].map(id=>({id,name:id?'The Obsidian Senate':'New Kingdom',age:cfg.startingAge,resources:Object.fromEntries(RESOURCES.map(r=>[r,Math.max(0,Number(typeof cfg.startingResources==='object'?cfg.startingResources[r]:cfg.startingResources)||0)])),population:0,popCap:0,maxPop:cfg.population,techs:[],researchQueue:[],score:0,kills:0})),
       entities:[],projectiles:[],effects:[],fog:{explored:new Array(width*width).fill(0),visible:new Array(width*width).fill(0)},winner:null,notifications:[],ai:{objective:'Establish an economy',priorities:{},buildOrder:[],target:null},stats:{tickMs:0,pathMs:0,aiMs:0,pathRequests:0}};
     this.spawns=[{x:cfg.size*.2,y:cfg.size*.25},{x:cfg.size*.8,y:cfg.size*.75}];
     this.generate();this.nav=new Navigation(this.state.map);this.nav.rebuild(this.state.entities);this.index();for(const e of this.state.entities)if(e.kind==='unit')this.upgradeUnit(e);this.population();this.fog();

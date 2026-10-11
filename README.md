@@ -1,8 +1,8 @@
-# AURELIA: Empires of the Sun — Unity Web
+# New Kingdom — Unity Web
 
 A Roman single-player RTS with four ages, economy, construction, research, fog, AI combat, tactical pause, and local saves.
 
-**[Play in your browser](https://aurelia-empires.vercel.app/)** — public Unity WebGL build. Desktop mouse and keyboard recommended.
+**[Play New Kingdom in your browser](https://new-kingdom-empires.vercel.app/)** — public Unity WebGL build. Desktop mouse and keyboard recommended. The previous game link still works.
 
 ## Architecture
 

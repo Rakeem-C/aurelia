@@ -38,7 +38,7 @@ export const BUILDINGS = {
  tower:building('Watch spire',0,{wood:50,stone:100},650,21,25,'♜',{damage:16,range:240,cooldown:1.5,vision:380,description:'Defensive fire and long-range vision.'}),
  wall:building('Stone curtain',0,{stone:20},700,14,8,'▥',{vision:80,description:'Blocks travel. Leave a gate or a gap for your citizens.'}),
  gate:building('Sun gate',1,{wood:30,stone:45},900,23,12,'Π',{vision:140,passableOwner:true,description:'Friendly citizens and soldiers pass through; enemies must break it.'}),
- fort:building('Aurelian citadel',2,{wood:180,stone:320,gold:80},2000,48,48,'♜',{damage:36,range:295,cooldown:1.3,vision:410,population:20,prerequisites:['barracks','forge'],description:'An imposing stronghold that protects your settlement.'}),
+ fort:building('Kingdom citadel',2,{wood:180,stone:320,gold:80},2000,48,48,'♜',{damage:36,range:295,cooldown:1.3,vision:410,population:20,prerequisites:['barracks','forge'],description:'An imposing stronghold that protects your settlement.'}),
  refinery:building('Oil works',3,{wood:130,iron:70,gold:60},650,32,30,'◉',{dropoff:['oil'],research:['engines'],description:'Receives oil for mechanized armies.'})
 };
 const tech = (name,age,building,cost,time,effects,description) => ({name,age,building,cost,time,effects,description,icon:'✦'});

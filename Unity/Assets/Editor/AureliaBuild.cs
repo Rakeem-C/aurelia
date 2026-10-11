@@ -11,7 +11,7 @@ public static class AureliaBuild
         var scene=EditorSceneManager.NewScene(NewSceneSetup.EmptyScene,NewSceneMode.Single);
         new GameObject("AureliaClient").AddComponent<AureliaClient>();
         Directory.CreateDirectory("Assets/Scenes");EditorSceneManager.SaveScene(scene,"Assets/Scenes/Battlefield.unity");
-        PlayerSettings.companyName="Automationation";PlayerSettings.productName="AURELIA: Empires of the Sun";
+        PlayerSettings.companyName="Automationation";PlayerSettings.productName="New Kingdom";
         PlayerSettings.WebGL.compressionFormat=WebGLCompressionFormat.Disabled;
         PlayerSettings.WebGL.nameFilesAsHashes=false;PlayerSettings.WebGL.decompressionFallback=false;
         PlayerSettings.WebGL.initialMemorySize=128;PlayerSettings.WebGL.maximumMemorySize=512;
